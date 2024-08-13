@@ -1,0 +1,103 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 340px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#input, #result {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+#input {
+    background-color: #f0f2f5;
+}
+
+#result {
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: right;
+    min-height: 44px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arithmetic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e4e6eb;
+    color: #050505;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #d8dadf;
+}
+
+button.operator, button.equals {
+    background-color: #1877f2;
+    color: #ffffff;
+}
+
+button.operator:hover, button.equals:hover {
+    background-color: #166fe5;
+}
+
+button.clear {
+    background-color: #fa3e3e;
+    color: #ffffff;
+}
+
+button.clear:hover {
+    background-color: #e93535;
+}
+
+.statistics button {
+    background-color: #42b72a;
+    color: #ffffff;
+}
+
+.statistics button:hover {
+    background-color: #36a420;
+}
